@@ -1,6 +1,11 @@
 /**
  * Created by Rob on 12/23/2015.
  */
+var items = [];
+var lastSeq = "";
+var newSeq = "index";
+var counter = 0;
+var totalTime = 0;
 String.prototype.toSMPTE = function () {
     var seconds = parseFloat(this, 10);
     var framerate = 30;
@@ -18,9 +23,14 @@ String.prototype.toSMPTE = function () {
     if (f < 10) { f = "0" + f };
     return h + ":" + m + ":" + s + ":" + f;
 };
+var trace_obj = {
+    timeOnPage: 0,
+    videoEvents:[],
+    pageEvents:[]
+};
 var media_events = {
     "abort": 0,
-    "canplay": 0,
+    //"canplay": 0,
     //"canplaythrough": 0,
     "durationchange": 0,
     "emptied": 0,
@@ -34,7 +44,7 @@ var media_events = {
     "playing": 0,
     //"progress": 0,
     "seeked": 0,
-    "seeking": 0,
+    //"seeking": 0,
     "stalled": 0,
     //"suspend": 0,
     //"timeupdate": 0,
@@ -63,8 +73,17 @@ var media_properties = ["error", "src", "currentSrc", "crossOrigin", "networkSta
     "muted", "defaultMuted", "audioTracks", "videoTracks", "textTracks", "width", "height", "videoWidth", "videoHeight", "poster"];
 var media_controller_properties = ["readyState", "buffered", "seekable", "duration", "currentTime",
     "paused", "playbackState", "played", "defaultPlaybackRate", "playbackRate", "volume", "muted"];
-var media_props, media_controller_props, webm;
+var media_props, media_controller_props;
+TimeMe.setIdleDurationInSeconds(30);
+TimeMe.setCurrentPageName("index");
+TimeMe.initialize();
 init = function () {
+    TimeMe.startTimer();
+    //setInterval(function(){
+        var timeOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
+        console.log(timeOnPage.toFixed(4));
+    //}, 25);
+
     document._video = document.getElementById("bombbomb-1");
     //(null, 0, "", false, {}, [])
     document._hasController = (document._video.controller) || false;
@@ -73,10 +92,20 @@ init = function () {
     init_events("events", media_events, false);
     //setInterval(update_properties, 250);
 };
+
 eventLogger = function (evt) {
-    var items = {
-        oEvt: {name: evt.type, currentTime: evt.target.currentTime, SMPTE: evt.target.currentTime.toString().toSMPTE()}
-    };
+    counter++;
+    lastSeq = newSeq;
+    newSeq = evt.type;
+    var sequenceLength = TimeMe.getTimeOnCurrentPageInSeconds();
+    TimeMe.setCurrentPageName(newSeq + "_" + counter);
+    TimeMe.startTimer();
+    totalTime += parseFloat((sequenceLength).toFixed(3));
+    items.push({
+        lastSeq: lastSeq, name: newSeq, sequenceLength: sequenceLength, pageTime: totalTime, playheadSeconds: evt.target.currentTime, playheadSMPTE: evt.target.currentTime.toString().toSMPTE()
+    });
+    //if (items.length > 5) items.pop();
+    console.clear();
     console.table(items);
 };
 init_events = function (id, targetEvents, isController) {
