@@ -36,7 +36,12 @@ label.inp-error{overflow:hidden;display:none;width:0;height:0}
 .clearfix:after, .cols:after{clear:both}
 .lt-ie8 .clearfix, .lt-ie8 .cols{height:1%}
 
-.sec-cont{position:relative;padding:30px 30px 0}
+.sec-cont{
+    position:relative;
+    padding: 0 0 0 0;
+    /*padding:30px 30px 0;*/
+    height:100%;
+}
 
 .cols{margin:0 0 0 -30px}
 .col{float:left;padding:0 0 0 30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
@@ -259,7 +264,7 @@ label.inp-error{overflow:hidden;display:none;width:0;height:0}
 
 @media screen and (max-width:940px){
 
-    .sec-cont{padding-bottom:30px}
+    /*.sec-cont{padding-bottom:30px}*/
 
     .header{padding-bottom:0}
 
@@ -296,7 +301,7 @@ label.inp-error{overflow:hidden;display:none;width:0;height:0}
 
 @media screen and (max-width:400px){
 
-    .sec-cont{padding:15px}
+    /*.sec-cont{padding:15px}*/
 
     .col{padding:0 0 15px}
 

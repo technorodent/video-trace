@@ -1,6 +1,6 @@
 
 .bombbomb-video {
-    width:50%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -8,4 +8,33 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 25000;
+}
+
+div.gridbox div.ftr td {
+    text-align: right;
+}
+
+div.gridbox table.hdr td {
+    font-weight: bold;
+}
+
+div.gridbox_dhx_skyblue table.obj tr td {
+    font-family: Tahoma;
+    font-size: 11px;
+    color: black;
+    border-width: 0 0 0 0;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+#mCSB_1 .mCSB_scrollTools {
+    visibility: hidden;
+}
+
+#gridInsert .objbox {
+    height: 265px !important;
+}
+
+#mCSB_2 .mCSB_scrollTools {
+    visibility: hidden;
 }

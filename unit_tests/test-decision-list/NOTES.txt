@@ -1,0 +1,3 @@
+Unicode databases store UTF-8 encoded characters as SQL CHAR datatypes (CHAR, VARCHAR2, CLOB, and LONG).
+
+For incremental Unicode support in certain columns, store Unicode data in either the UTF-16 or UTF-8 encoding form in SQL NCHAR datatypes (NCHAR, NVARCHAR2, and NCLOB). The SQL NCHAR datatypes are used only for storing Unicode data.

@@ -1,0 +1,5 @@
+1. Google Chrome 47.0.2526.106 m not asking for favicon.ico
+    Tested in 38.0.5 favicon works
+    Tested in Opera 12.15.1748
+    Tested in IE 9.0.8112.16421
+    Tested in Safari 5.1.7 (7534.52.2)

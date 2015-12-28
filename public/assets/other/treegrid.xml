@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rows>
+    <head>
+        <beforeInit>
+            <!--call command="attachHeader">
+                <param>#rspan,Price,Cover,Ships in</param>
+            </call-->
+        </beforeInit>
+        <column width="*" type="tree" align="left" color="white" sort="str">Info Item</column>
+        <column width="40" type="ed" align="left" color="white" sort="str">Collected Value</column>
+        <settings>
+            <colwidth>%</colwidth>
+        </settings>
+    </head>
+    <row id="general-user" xmlkids="1" im0="doc.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+        <cell image="folderClosed.gif">General User Info</cell>
+        <cell></cell>
+        <row id="request_date">
+            <cell>Request Date/Time</cell>
+            <cell></cell>
+        </row>
+        <row id="ip_address">
+            <cell>IP</cell>
+            <cell></cell>
+        </row>
+        <row id="position">
+            <cell image="folderClosed.gif">Position</cell>
+            <row id="position-longitude">
+                <cell>longitude</cell>
+                <cell>-1</cell>
+            </row>
+            <row id="position-latitude">
+                <cell>latitude</cell>
+                <cell>-1</cell>
+            </row>
+        </row>
+        <row id="continent">
+            <cell image="folderClosed.gif">Continent</cell>
+            <row id="continent-name">
+                <cell>Name</cell>
+                <cell>North America</cell>
+            </row>
+            <row id="continent-code">
+                <cell>code</cell>
+                <cell>"na"</cell>
+            </row>
+        </row>
+        <row id="country">
+            <cell image="folderClosed.gif">Country</cell>
+            <row id="country-name">
+                <cell>name</cell>
+                <cell>US</cell>
+            </row>
+            <row id="country-code">
+                <cell>code</cell>
+                <cell>us</cell>
+            </row>
+        </row>
+        <row id="city">
+            <cell image="folderClosed.gif">City</cell>
+            <row id="city-name">
+                <cell>Name</cell>
+                <cell>COS</cell>
+            </row>
+            <row id="city-code">
+                <cell>code</cell>
+                <cell>"80917"</cell>
+            </row>
+        </row>
+    </row>
+    <row id="params">
+        <cell image="folderClosed.gif">Query Params</cell>
+        <cell></cell>
+        <row id="conversation_id">
+            <cell>Conversation ID</cell>
+            <cell></cell>
+        </row>
+        <row id="cusID">
+            <cell>Customer ID</cell>
+            <cell></cell>
+        </row>
+        <row id="source">
+            <cell>Source</cell>
+            <cell></cell>
+        </row>
+        <row id="sent">
+            <cell>Sent</cell>
+            <cell></cell>
+        </row>
+        <row id="propertyID">
+            <cell>Other ID</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="Fingerprint">
+        <cell image="folderClosed.gif">Fingerprint</cell>
+        <row id="getFingerprint">
+            <cell>Fingerprint</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="User Agent">
+        <cell image="folderClosed.gif">User Agent</cell>
+        <row id="getUserAgent">
+            <cell>User Agent</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="Browser">
+        <cell image="folderClosed.gif">Browser</cell>
+        <row id="getBrowser">
+            <cell>Name</cell>
+            <cell></cell>
+        </row>
+        <row id="getBrowserVersion">
+            <cell>Version</cell>
+            <cell></cell>
+        </row>
+        <row id="getBrowserMajorVersion">
+            <cell>Major Version</cell>
+            <cell></cell>
+        </row>
+        <row id="isIE">
+            <cell>Internet Explorer Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isChrome">
+            <cell>Chrome Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isFirefox">
+            <cell>Firefox Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isSafari">
+            <cell>Safari Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isOpera">
+            <cell>Opera Test</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="Engine">
+        <cell image="folderClosed.gif">Engine</cell>
+        <row id="getEngine">
+            <cell>Engine</cell>
+            <cell></cell>
+        </row>
+        <row id="getEngineVersion">
+            <cell>Version</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="OS">
+        <cell image="folderClosed.gif">Operating System</cell>
+        <row id="getOS">
+            <cell>System Name</cell>
+            <cell></cell>
+        </row>
+        <row id="getOSVersion">
+            <cell>System Version</cell>
+            <cell></cell>
+        </row>
+        <row id="isWindows">
+            <cell>Windows Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isMac">
+            <cell>Mac Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isLinux">
+            <cell>Linux Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isUbuntu">
+            <cell>Ubuntu Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isSolaris">
+            <cell>Solaris Test</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="Device">
+    <cell image="folderClosed.gif">Device</cell>
+    <row id="getDevice">
+        <cell>Device Name</cell>
+        <cell></cell>
+    </row>
+    <row id="getDeviceType">
+        <cell>Device Type</cell>
+        <cell></cell>
+    </row>
+    <row id="getDeviceVendor">
+        <cell>Device Vendor</cell>
+        <cell></cell>
+    </row>
+</row>
+    <row id="CPU">
+        <cell image="folderClosed.gif">CPU</cell>
+        <row id="getCPU">
+            <cell>Type</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="Mobile">
+        <cell image="folderClosed.gif">Mobile</cell>
+        <row id="isMobile">
+            <cell>Mobile Device</cell>
+            <cell></cell>
+        </row>
+        <row id="isMobileMajor">
+            <cell>Major Mobile</cell>
+            <cell></cell>
+        </row>
+        <row id="isMobileAndroid">
+            <cell>Android Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isMobileOpera">
+            <cell>Mobile Opera Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isMobileWindows">
+            <cell>Mobile Windows Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isMobileBlackBerry">
+            <cell>BlackBerry Test</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="iOS">
+        <cell image="folderClosed.gif">iOS</cell>
+        <row id="isMobileIOS">
+            <cell>iOS Mobile</cell>
+            <cell></cell>
+        </row>
+        <row id="isIphone">
+            <cell>Iphone Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isIpad">
+            <cell>Ipad Test</cell>
+            <cell></cell>
+        </row>
+        <row id="isIpod">
+            <cell>Ipod Test</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="Screen">
+    <cell image="folderClosed.gif">Screen</cell>
+    <row id="getScreenPrint">
+        <cell>Screen Print</cell>
+        <cell></cell>
+    </row>
+    <row id="getColorDepth">
+        <cell>Color Depth</cell>
+        <cell></cell>
+    </row>
+    <row id="getCurrentResolution">
+        <cell>Current Resolution</cell>
+        <cell></cell>
+    </row>
+    <row id="getAvailableResolution">
+        <cell>Available Resolution</cell>
+        <cell></cell>
+    </row>
+    <row id="getDeviceXDPI">
+        <cell>XDPI</cell>
+        <cell></cell>
+    </row>
+    <row id="getDeviceYDPI">
+        <cell>YDIP</cell>
+        <cell></cell>
+    </row>
+</row>
+    <row id="Plugin">
+        <cell image="folderClosed.gif">Plugins</cell>
+        <row id="getPlugins">
+            <cell>All</cell>
+            <cell></cell>
+        </row>
+        <row id="isJava">
+            <cell>Java Enabled</cell>
+            <cell></cell>
+        </row>
+        <row id="getJavaVersion">
+            <cell>Java Version</cell>
+            <cell></cell>
+        </row>
+        <row id="isFlash">
+            <cell>Flash</cell>
+            <cell></cell>
+        </row>
+        <row id="getFlashVersion">
+            <cell>Flash Version</cell>
+            <cell></cell>
+        </row>
+        <row id="isSilverlight">
+            <cell>Silverlight</cell>
+            <cell></cell>
+        </row>
+        <row id="getSilverlightVersion">
+            <cell>Silverlight Version</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="Mime Types">
+        <cell image="folderClosed.gif">Mime Types</cell>
+        <row id="isMimeTypes">
+            <cell>Mime Types Available</cell>
+            <cell></cell>
+        </row>
+        <row id="getMimeTypes">
+            <cell>Types</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="Fonts">
+        <cell image="folderClosed.gif">Fonts</cell>
+        <row id="isFont">
+            <cell>Fonts Enabled</cell>
+            <cell></cell>
+        </row>
+        <row id="getFonts">
+            <cell>All Fonts</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="Storage">
+        <cell image="folderClosed.gif">Storage</cell>
+        <row id="isLocalStorage">
+            <cell>Local Storage</cell>
+            <cell></cell>
+        </row>
+        <row id="isSessionStorage">
+            <cell>Session Storage</cell>
+            <cell></cell>
+        </row>
+        <row id="isCookie">
+            <cell>Cookies</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="Time">
+        <cell image="folderClosed.gif">Time</cell>
+        <row id="getTimeZone">
+            <cell>Time Zone</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="Language">
+        <cell image="folderClosed.gif">Language</cell>
+        <row id="getLanguage">
+            <cell>Language ID</cell>
+            <cell></cell>
+        </row>
+        <row id="getSystemLanguage">
+            <cell>System Language</cell>
+            <cell></cell>
+        </row>
+    </row>
+    <row id="Canvas">
+        <cell image="folderClosed.gif">Canvas</cell>
+    </row>
+</rows>
