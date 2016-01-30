@@ -19,10 +19,10 @@ function decrypt(text){
     dec += decipher.final('utf8');
     return dec;
 }
-//var bombbombHash = encrypt("section=31&conversation_id=1397&source=email")
+//var oddshotHash = encrypt("section=31&conversation_id=1397&source=email")
 // outputs 178bd784287e762d6318a20efded0a9ea15c85a0d9e8d35b7dad0827cdd02e258d5785d1908dcb4ddc8e282a
-//console.log(bombbombHash);
-//console.log(decrypt(bombbombHash));
+//console.log(oddshotHash);
+//console.log(decrypt(oddshotHash));
 
 //queryString for test: ?video=178bd784287e762d6318a20efded0a9ea15c85a0d9e8d35b7dad0827cdd02e258d5785d1908dcb4ddc8e282a
 router.get('/', function (req, res, next) {

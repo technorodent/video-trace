@@ -103,7 +103,7 @@ init = function () {
     var timeOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
     console.log(timeOnPage.toFixed(4));
     //}, 25);
-    document._video = document.getElementById("bombbomb-1");
+    document._video = document.getElementById("oddshot-1");
     //(null, 0, "", false, {}, [])
     document._hasController = (document._video.controller) || false;
     document._controller = document._video.controller;

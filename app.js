@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var app = express();
-//serve a bombbomb ico
+//serve a oddshot ico
 app.use(require('browser-logger')());
 app.use(favicon(__dirname + '/public/favicon.ico'));
 // view engine setup
